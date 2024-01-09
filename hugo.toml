@@ -1,0 +1,83 @@
+defaultContentLanguage = "th"
+defaultContentLanguageInSubdir= true
+theme      = "chaklam"
+publishDir = "docs"
+baseURL    = "https://www.aibrainlab.co/"
+
+title      = "AI Brain Lab"
+
+[params]
+    logo = "/img/_logo.png"
+
+[taxonomies]
+  role = 'roles'
+
+# https://gohugo.io/getting-started/configuration/
+
+[languages.th]
+    contentDir = 'content/th'
+    languageName = 'Thai'
+
+[[languages.th.menu.main]]
+  name = 'หน้าหลัก'
+  pageRef = '/'
+  weight = 10
+
+[[languages.th.menu.main]]
+  name = 'เกี่ยวกับเรา'
+  pageRef = '/'
+  weight = 20
+  params = { section='#about' }
+
+[[languages.th.menu.main]]
+  name = 'ผลิตภัณฑ์'
+  pageRef = '/'
+  weight = 30
+  params = { section='#product' }
+
+[[languages.th.menu.main]]
+name = 'เชื่อมต่อกับ API ของเรา'
+pageRef = '/'
+weight = 40
+params = { section='#services' }
+
+[[languages.th.menu.main]]
+  name = 'ติตต่อ'
+  pageRef = '/'
+  weight = 50
+  params = { section='#contact' }
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    languageName = 'English'
+
+[[languages.en.menu.main]]
+  name = 'Home'
+  pageRef = '/'
+  weight = 10
+
+[[languages.en.menu.main]]
+  name = 'About'
+  pageRef = '/'
+  weight = 20
+  params = { section='#about' }
+
+[[languages.en.menu.main]]
+  name = 'Product'
+  pageRef = '/'
+  weight = 30
+  params = { section='#product' }
+
+[[languages.en.menu.main]]
+name = 'Connect to our API'
+pageRef = '/'
+weight = 40
+params = { section='#services' }
+
+[[languages.en.menu.main]]
+  name = 'Contact Us'
+  pageRef = '/'
+  weight = 50
+  params = { section='#contact' }
+  

@@ -1,0 +1,722 @@
+{{ define "main" }}
+
+<!-- ======= Hero Section ======= -->
+
+<section id="hero" class="d-flex">
+  <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center">
+      <div class="col-xl-7 col-lg-9 text-center">
+        <h1>AI Brain Lab</h1>
+        <p style="margin-top: 10px;" class="lead">{{ .Params.hero }}</p>
+        {{/* <p class="lead text-muted">{{ .Params.hero2 }}</p> */}}
+        {{/* <p class="lead text-muted">{{ .Params.hero3 }}</p> */}}
+      </div>
+    </div>
+    <div class="text-center">
+      <a style="background-color: #f38733" href="#portfolio" class="btn-get-started scrollto">{{ .Params.bt1 }}</a>
+      <a style="background-color: #05220a" href="#contact" class="btn-get-started scrollto">{{ .Params.bt2 }}</a>
+    </div>
+    <div id="features">
+      <div class="row icon-boxes">
+        <div class="col-lg-4 d-flex align-items-stretch mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <h4 class="title"><a href=""><i class="fa fa-font" aria-hidden="true"></i> {{ .Params.f1_title }}</a></h4>
+            <p class="description">{{ .Params.f1_desc }}</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-stretch mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <h4 class="title"><a href=""><i class="fa fa-heart" aria-hidden="true"></i> {{ .Params.f2_title
+                }}</a></h4>
+            <p class="description">{{ .Params.f2_desc }}</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-stretch mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box">
+            <h4 class="title"><a href=""><i class="fa fa-file-text-o" aria-hidden="true"></i> {{ .Params.f3_title }}</a>
+            </h4>
+            <p class="description">{{ .Params.f3_desc }}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section><!-- End Hero -->
+
+<main id="main">
+  <!-- End Clients Section -->
+
+  <section id="about" class="about section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>{{ .Params.about_title }}</h2>
+        <p>{{ .Params.about_slogan }}</p>
+      </div>
+
+      <div class="row content">
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <h4>{{ .Params.vision_title }}</h4>
+          <p>
+            {{ .Params.vision_desc }}
+          </p>
+          <h5>{{ .Params.values_title }}</h5>
+          <ul>
+            <li><i class="ri-check-double-line"></i> {{ .Params.values_desc1 }}</li>
+            <li><i class="ri-check-double-line"></i> {{ .Params.values_desc2 }}</li>
+            <li><i class="ri-check-double-line"></i> {{ .Params.values_desc3 }}</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h4>{{ .Params.mission_title }}</h4>
+          <p>
+            {{ .Params.mission_desc }}
+          </p>
+          <ul>
+            <li><i class="ri-check-double-line"></i> {{ .Params.mission_desc1 }}</li>
+            <li><i class="ri-check-double-line"></i> {{ .Params.mission_desc2 }}</li>
+            <li><i class="ri-check-double-line"></i> {{ .Params.mission_desc3 }}</li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section><!-- End About Section -->
+
+  <!-- ======= ESG Report Section ======= -->
+  <section id="product" class="about-video">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>{{ .Params.use_cases_title }}</h2>
+        <p>{{ .Params.use_cases_slogan }}</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+          <img src="/img/portfolio/esg_.jpg" class="img-fluid" alt="">
+          <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4" data-vbtype="video"
+            data-autoplay="true"></a>
+        </div>
+
+        <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+          <h3>ESG reporting</h3>
+          <p class="fst-italic">
+            Support corporates to generate ESG / sustainability related reports within a few minutes.
+          </p>
+          <ul>
+            <li><i class="bx bx-check-double"></i> English language powered by state-of-the-art open-sourced (e.g.,
+              mistral) or proprietary models (e.g., OpenAI).</li>
+            <li><i class="bx bx-check-double"></i> Thai language powered by our Thai embedding and instruct models.</li>
+            <li><i class="bx bx-check-double"></i> Your company info is kept privately and securely.</li>
+            <li><i class="bx bx-check-double"></i> Provides a user-friendly form interface where you can easily input
+              your company information in few minutes, and the report will be then generated.</li>
+            <li><i class="bx bx-check-double"></i> Provides more than 10 formats of format to choose from.</li>
+            <li><i class="bx bx-check-double"></i> Help your company keep track of sustainability measures through
+              dashboardthat can be directly incorporated onto the report.</li>
+            <li><i class="bx bx-check-double"></i> Don't like what AI has generated? Allow users to download for further
+              revision.</li>
+          </ul>
+          <div class="mt-3">
+            <button style="padding: 0px 60px 0px 60px;" type="button" class="btn btn-outline-primary">{{
+              .Params.use_cases_btn1 }}</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End About Video Section -->
+
+  <!-- ======= Medical AI Section ======= -->
+  <section id="medical" class="about-video section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+
+        <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+          <h3>Medical AI</h3>
+          <p class="fst-italic">
+            Facilitate radiologists with AI-powered segmentation, annotation, reporting, and diagnosis.
+          </p>
+          <ul>
+            <li><i class="bx bx-check-double"></i> Powered by state-of-the-art biomedical vision models, allowing
+              radiologists to ask AI to help perform segmentation, annotation, report geneation, and diagnosis.</li>
+            <li><i class="bx bx-check-double"></i> Powered by state-of-the-art vision-text models that can allow
+              radiologists to ask textual questions on the medical images.</li>
+            <li><i class="bx bx-check-double"></i> Synergizes with radiologist expertise by allowing them to collaborate
+              with AI results through annotation editing or report customization.</li>
+            <li><i class="bx bx-check-double"></i> Supports various input such as CT scans, fMRI, and MRIs.</li>
+          </ul>
+          <div class="mt-3">
+            <button style="padding: 0px 60px 0px 60px;" type="button" class="btn btn-outline-primary">{{
+              .Params.use_cases_btn1 }}</button>
+          </div>
+        </div>
+
+        <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+          <img src="/img/portfolio/mri.jpg" class="img-fluid" alt="">
+          <a href="https://youtu.be/XV33FlJNbag?si=YYcZXeu0eSdlpftC" class="glightbox play-btn mb-4" data-vbtype="video"
+            data-autoplay="true"></a>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End About Video Section -->
+
+  <!-- ======= ChatData Section ======= -->
+  <section id="chatdata portfolio" class="about-video portfolio">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+
+        <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+          <img src="/img/chatdata.jpg" class="img-fluid" alt="">
+          <a href="https://www.youtube.com/watch?v=n6CsBuIEgoc" class="glightbox play-btn mb-4" data-vbtype="video"
+            data-autoplay="true"></a>
+        </div>
+
+        <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+          <a target="_blank" href="https://www.youtube.com/watch?v=n6CsBuIEgoc">
+            <h3>ChatData</h3>
+          </a>
+          <p class="fst-italic">
+            Allows your company to deploy your chatbot assistant in few minutes.
+          </p>
+          <ul>
+            <li><i class="bx bx-check-double"></i> English language powered by state-of-the-art open-sourced (e.g.,
+              mistral) or proprietary models (e.g., OpenAI).</li>
+            <li><i class="bx bx-check-double"></i> Thai language powered by our Thai embedding and instruct models.</li>
+            <li><i class="bx bx-check-double"></i> Your company info is kept privately and securely.</li>
+            <li><i class="bx bx-check-double"></i> Provides full customization and rich features including selection of
+              retrievers, prompt customization, the ability to perform reinforcement learning and instruction tuning,
+              add in prebuilt rules, and much more, all through our user-friendly interface, without any coding or
+              technical skills.</li>
+          </ul>
+          <p>
+            Example use cases include: customer support, knowledge base, job interview, financial advisor and much more.
+          </p>
+        </div>
+        <p></p>
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a target="_blank" href="https://youtu.be/TM8VHCVCgZg?si=1Myf2djAvSd6sA7V">
+              <div class="portfolio-wrap">
+                <img src="/img/portfolio/cs_text.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>{{ .Params.use_cases_title1 }}</h4>
+                  <p>{{ .Params.use_cases_desc1 }}</p>
+                </div>
+              </div>
+            </a>
+            <div class="mt-3 text-center">
+              <a target="_blank" href="http://back.tokyo.cs.ait.ac.th/set_config_salegpt"><button
+                  style="padding: 0px 60px 0px 60px;" type="button" class="btn btn-outline-primary">{{
+                  .Params.use_cases_btn1 }}</button></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a target="_blank" href="https://youtu.be/yaRK5x5v63w">
+              <div class="portfolio-wrap">
+                <img src="/img/portfolio/qa_text.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>{{ .Params.use_cases_title2 }}</h4>
+                  <p>{{ .Params.use_cases_desc2 }}</p>
+                </div>
+              </div>
+            </a>
+            <div class="mt-3 text-center">
+              <a target="_blank" href="http://back.tokyo.cs.ait.ac.th/demo_knowledge_base"><button
+                  style="padding: 0px 60px 0px 60px;" type="button" class="btn btn-outline-primary">{{
+                  .Params.use_cases_btn1 }}</button></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a target="_blank" href="https://youtu.be/x0wkzPLoBjA">
+              <div class="portfolio-wrap">
+                <img src="/img/portfolio/interview_text.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>{{ .Params.use_cases_title3 }}</h4>
+                  <p>{{ .Params.use_cases_desc3 }}</p>
+                </div>
+              </div>
+            </a>
+            <div class="mt-3 text-center">
+              <a target="_blank" href="http://back.tokyo.cs.ait.ac.th/demo_interview_part1"><button
+                  style="padding: 0px 60px 0px 60px;" type="button" class="btn btn-outline-primary">{{
+                  .Params.use_cases_btn1 }}</button></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a target="_blank" href="https://youtu.be/Ljo_Um9fh_Y">
+              <div class="portfolio-wrap">
+                <img src="/img/portfolio/finance_text.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>{{ .Params.use_cases_title4 }}</h4>
+                  <p>{{ .Params.use_cases_desc4 }}</p>
+                </div>
+              </div>
+            </a>
+            <div class="mt-3 text-center">
+              <a target="_blank" href="http://back.tokyo.cs.ait.ac.th/demo_finance_v2"><button
+                  style="padding: 0px 60px 0px 60px;" type="button" class="btn btn-outline-primary">{{
+                  .Params.use_cases_btn1 }}</button></a>
+            </div>
+          </div> 
+            
+        </div>
+        {{/*  <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+           
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a target="_blank" href="https://youtu.be/eK-lxMjvbVU">
+              <div class="portfolio-wrap">
+                <img src="/img/portfolio/formal_text.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>{{ .Params.use_cases_title6 }}</h4>
+                  <p>{{ .Params.use_cases_desc6 }}</p>
+                </div>
+              </div>
+            </a>
+            <div class="mt-3 text-center">
+              <a target="_blank" href="http://thai2gov.tokyo.cs.ait.ac.th/"><button style="padding: 0px 60px 0px 60px;"
+                  type="button" class="btn btn-outline-primary">{{
+                  .Params.use_cases_btn1 }}</button></a>
+            </div>
+          </div>
+        </div>
+      </div>  */}}
+
+    </div>
+  </section><!-- End About Video Section -->
+
+  <!-- ======= Scholarly Section ======= -->
+  <section id="scholarly" class="about-video section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+
+        <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+          <h3>Scholarly</h3>
+          <p class="fst-italic">
+            Facilitate researchers with AI-powered style paraphrasing, citation recommendation, abstract generation,
+            grammar checkers and much more.
+          </p>
+          <ul>
+            <li><i class="bx bx-check-double"></i> English language powered by state-of-the-art open-sourced (e.g.,
+              mistral) or proprietary models (e.g., OpenAI).</li>
+            <li><i class="bx bx-check-double"></i> Thai language powered by our Thai embedding and instruct models.</li>
+            <li><i class="bx bx-check-double"></i> Allow researchers to upload their favorite papers, and then the AI
+              will recommend styles and grammar learned from these papers.</li>
+            <li><i class="bx bx-check-double"></i> Import and export in your favorite format such as Word or LaTeX.</li>
+          </ul>
+          <div class="mt-3">
+            <a target="_blank" href="http://scholarly.brain.cs.ait.ac.th"><button style="padding: 0px 60px 0px 60px;"
+                type="button" class="btn btn-outline-primary">{{
+                .Params.use_cases_btn1 }}</button></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+          <img src="/img/portfolio/write.jpg" class="img-fluid" alt="">
+          <a href="https://youtu.be/DXnu3WY3znc?si=jeBL3bA0_0lvZGZ-" class="glightbox play-btn mb-4" data-vbtype="video"
+            data-autoplay="true"></a>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End About Video Section -->
+
+  <!-- ======= Partners Section ======= -->
+  <!--  <section id="clients" class="clients">
+    <div class="container">
+      {{/*  <div class="section-title">
+        <h2>Partners</h2>
+        <p>Our partners.</p>
+      </div>  */}}
+      <div class="row">
+        <div class="col-sm-2 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <a href="http://www.cho.co.th" target="_blank">
+            <img src="/img/partners/ctv.jpg" class="img-fluid" alt="">
+          </a>
+        </div>
+        <div class="col-sm-2 d-flex align-items-center justify-content-center" data-aos="zoom-in">
+          <a href="https://www.fissionsoft.co.th" target="_blank">
+            <img src="/img/partners/fissionsoft.png" class="img-fluid" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>  -->
+
+  <!-- ======= API Section ======= -->
+  <section id="services" class="services">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>{{ .Params.service_title }}</h2>
+        <p>{{ .Params.service_desc }}</p>
+      </div>
+
+      <div class="text-center mb-4">
+        <button style="padding: 10px 10px;" type="button" class="btn btn-outline-primary">{{
+          .Params.service_btn1 }}</button>
+        <button style="padding: 10px 10px;" type="button" class="btn btn-outline-success">{{
+          .Params.service_btn2 }}</button>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box iconbox-blue">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                </path>
+              </svg>
+              <i class='bx bx-text'></i>
+            </div>
+            <h5><a href="">{{ .Params.service_title_1 }}</a></h5>
+            <p>{{ .Params.service_desc_1 }}</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box iconbox-orange ">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                </path>
+              </svg>
+              <i class='bx bx-hive'></i>
+            </div>
+            <h5><a href="">{{ .Params.service_title_2 }}</a></h5>
+            <p>{{ .Params.service_desc_2 }}</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box iconbox-pink">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
+                </path>
+              </svg>
+              <i class='bx bx-images'></i>
+            </div>
+            <h5><a href="">{{ .Params.service_title_3 }}</a></h5>
+            <p>{{ .Params.service_desc_3 }}</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box iconbox-yellow">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813">
+                </path>
+              </svg>
+              <i class='bx bxs-chat'></i>
+            </div>
+            <h5><a href="">{{ .Params.service_title_4 }}</a></h5>
+            <p>{{ .Params.service_desc_4 }}</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Sevices Section -->
+
+  <!-- ======= Team Section ======= -->
+  {{/* <section id="team" class="team">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>{{ .Params.team_title }}</h2>
+        <p>{{ .Params.team_slogan }}</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="member">
+            <div class="member-img">
+              <img src="/img/team/raymond.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a target="_blank" href="https://www.linkedin.com/in/raymond-chee-109428/"><i
+                    class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Raymond Chee</h4>
+              <span>Executive Chairman, CSO</span>
+              <span>Leading the board, strategic matters & overseeing the growth</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="member">
+            <div class="member-img">
+              <img src="/img/team/chaklam.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a target="_blank" href="http://chaklam.com"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Chaklam Silpasuwanchai</h4>
+              <span>CEO, CTO</span>
+              <span>Manages overall direction and technological roadmap of the company</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <div class="member-img">
+              <img src="/img/team/sanjeet.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a target="_blank" href="https://www.linkedin.com/in/sanjeetamatya/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Sanjeet Amatya</h4>
+              <span>President, CBDO</span>
+              <span class="custom-smaller-font">Oversees the overall operations and business development of the
+                company</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Team Section --> */}}
+
+  <!--<section id="pricing" class="pricing">
+
+    <div class="container">
+      <div class="section-title">
+        <h2>{{ .Params.pricing_title }}</h2>
+        <p>{{ .Params.pricing_slogan }}</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pricing-box mt-4">
+            <i class="mdi mdi-account h1"></i>
+            <h4 class="f-20">Free</h4>
+
+            <div class="mt-4 pt-2">
+
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing1}}<b>< 10k</b> {{.Params.pricing1_1}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing2}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> Small size {{.Params.pricing2_1}} </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing3}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing4}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing5}}</p>
+
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing6}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing7}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing8}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing9}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing10}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing11}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing12}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing13}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing14}}</p>
+
+            </div>
+
+            {{/* <p class="mt-4 pt-2 text-muted">For everyone.</p> */}}
+            {{/* <div class="pricing-plan mt-4 pt-2">
+              <h4 class="text-muted"><s> $9.99</s> <span class="plan pl-3 text-dark">$8.99 </span></h4>
+              <p class="text-muted mb-0">Per Month</p>
+            </div> */}}
+            <div class="pricing-plan mt-4 pt-2">
+              <h4 class="text-muted"><span class="plan pl-3 text-dark">Free </span></h4>
+              <div class="text-muted mb-0">{{ .Params.pricing_unit1 }}</div>
+            </div>
+            <div class="mt-4">
+              <a href="" class="btn btn-primary btn-rounded">{{.Params.pricing_btn1}}</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pricing-box mt-4">
+            <div class="pricing-badge">
+              <span class="badge">Recommended</span>
+            </div>
+
+            <i class="mdi mdi-account-plus h1 text-primary"></i>
+            <h4 class="f-20 text-primary">Plus</h4>
+
+            <div class="mt-4 pt-2">
+
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing1}} <b>< 100k</b> {{.Params.pricing1_1}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing2}} </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> Small size {{.Params.pricing2_1}} </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing3}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing4}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing5}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger text-success f-18 mr-2"></i> {{.Params.pricing6}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger text-success f-18 mr-2"></i> {{.Params.pricing7}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger text-success f-18 mr-2"></i> {{.Params.pricing8}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing9}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing10}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing11}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing12}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing13}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing14}}</p>
+            </div>
+
+            <div class="pricing-plan mt-4 pt-2">
+              <h4 class="text-muted"><span class="plan pl-3 text-dark">{{ .Params.price1 }} </span></h4>
+              <p class="text-muted mb-0">{{ .Params.pricing_unit2 }}</p>
+            </div>
+
+            <div class="mt-4">
+              <a href="" class="btn btn-primary btn-rounded">{{.Params.pricing_btn2}}</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pricing-box mt-4">
+            <i class="mdi mdi-account-multiple-plus h1"></i>
+            <h4 class="f-20">Pro</h4>
+
+            <div class="mt-4 pt-2">
+
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing1}} <b>< 500k</b> {{.Params.pricing1_1}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing2}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> Big size {{.Params.pricing2_1}} </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing3}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing4}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing5}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing6}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing7}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing8}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing9}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing10}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing11}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing12}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing13}}</p>
+              <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i> {{.Params.pricing14}}</p>
+            </div>
+
+            <div class="pricing-plan mt-4 pt-2">
+              <h4 class="text-muted"><span class="plan pl-3 text-dark">{{ .Params.price2 }}</span></h4>
+              <p class="text-muted mb-0">{{ .Params.pricing_unit3 }}</p>
+            </div>
+
+            <div class="mt-4">
+              <a href="" class="btn btn-primary btn-rounded">{{.Params.pricing_btn3}}</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pricing-box mt-4">
+            <i class="mdi mdi-account-group h1"></i>
+            <h4 class="f-20">Enterprise</h4>
+            <div class="mt-4 pt-2">
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing1}} <b>< 2,000k</b> {{.Params.pricing1_1}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing2}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> Big size {{.Params.pricing2_1}} </p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing3}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing4}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing5}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing6}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing7}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing8}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing9}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing10}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing11}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing12}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing13}}</p>
+              <p class="mb-2"><i class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i> {{.Params.pricing14}}</p>
+            </div>
+
+            {{/* <p class="mt-4 pt-2 text-muted">For everyone.</p> */}}
+            {{/* <div class="pricing-plan mt-4 pt-2">
+              <h4 class="text-muted"><s> $9.99</s> <span class="plan pl-3 text-dark">$8.99 </span></h4>
+              <p class="text-muted mb-0">Per Month</p>
+            </div> */}}
+            <div class="pricing-plan mt-4 pt-2">
+              <h4 class="text-muted"><span class="plan pl-3 text-dark">{{ .Params.price3 }}</span></h4>
+              <p class="text-muted mb-0">{{ .Params.pricing_unit3 }}</p>
+            </div>
+            <div class="mt-4">
+              <a href="" class="btn btn-primary btn-rounded">{{.Params.pricing_btn4}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>-->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>{{.Params.contact }}</p>
+      </div>
+
+      <div>
+        <iframe style="border:0; width: 100%; height: 270px;"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.977593956777!2d100.61184751472204!3d14.078499990136669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e27f8de68c7f59%3A0xf01923824353270!2sAsian%20Institute%20of%20Technology%20(AIT)!5e0!3m2!1sen!2sth!4v1679621412838!5m2!1sen!2sth"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>58 Moo 9 Phahonyothin Road, Tambon Khlong Nung, Amphoe Khlong Luang</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="info">
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>chaklam@ait.asia</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="info">
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>063-310-9191</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+
+{{ end }}
